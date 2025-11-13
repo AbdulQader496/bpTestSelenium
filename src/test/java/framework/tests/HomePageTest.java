@@ -86,7 +86,7 @@ public class HomePageTest extends BaseTest {
     }
 
     @Test
-    public void ValueValidationLowerRange() {
+    public void SystolicAndDiastolicValueOutOfLowerRange() {
         homePage.enterSystolicValue("69");
         homePage.enterDiastolicValue("39"); 
         homePage.clickSubmitButton();
@@ -102,7 +102,7 @@ public class HomePageTest extends BaseTest {
     }
 
     @Test
-    public void ValueValidationUpperRange() {
+    public void SystolicAndDiastolicValueOutOfUpperRange() {
         homePage.enterSystolicValue("191");
         homePage.enterDiastolicValue("101"); 
         homePage.clickSubmitButton();
