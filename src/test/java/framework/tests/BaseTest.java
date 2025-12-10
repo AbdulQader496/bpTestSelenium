@@ -17,7 +17,10 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
 
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver()
+                .avoidBrowserDetection()
+                .setup();
+        
 
         ChromeOptions options = new ChromeOptions();
 
