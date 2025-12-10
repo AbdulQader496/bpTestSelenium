@@ -3,6 +3,7 @@ package framework.tests;
 import org.testng.annotations.Test;
 
 import framework.pages.HomePage;
+import framework.pages.MainPageNavigation;
 
 public class HomePageTest extends BaseTest {
     protected HomePage homePage = new HomePage();
@@ -132,6 +133,13 @@ public class HomePageTest extends BaseTest {
         assert valueGreaterValidationText.equals("Systolic must be greater than Diastolic") : "Expected 'Systolic value must be greater than Diastolic value.'" + valueGreaterValidationText + "'";
     }
 
+    @Test
+    public void homeFooterTest() {        
+        String privacyText = homePage.getFooterPrivacyPolicyText();
+        assert privacyText.equals("Privacy") : "Expected 'Privacy' but got '" + privacyText + "'";
+        String copyrightText = homePage.getFooterCopyrightText();
+        assert copyrightText.contains("© 2025 - BPCalculator -") : "Expected copyright symbol but got '" + copyrightText + "'";
+    }
 
     
 }

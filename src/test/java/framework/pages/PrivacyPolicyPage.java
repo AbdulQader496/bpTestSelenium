@@ -7,7 +7,7 @@ import static framework.tests.BaseTest.driver;
 
 public class PrivacyPolicyPage extends HomePage{
     private static final String NAME = "Privacy Policy";
-     private static final By FOOTER_PRIVACY_POLICY_LINK = By.xpath("//footer//a[contains(text(),'Privacy')]");
+    private static final By FOOTER_PRIVACY_POLICY_LINK = By.xpath("//footer//a[contains(text(),'Privacy')]");
     private static final By FOOTER_COPYRIGHT = By.xpath("//footer//div[contains(@class,'container')]");
 
 

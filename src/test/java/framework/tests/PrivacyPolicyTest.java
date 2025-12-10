@@ -16,12 +16,12 @@ public class PrivacyPolicyTest extends BaseTest{
     }
 
     @Test
-    public void FooterTest() {
+    public void privacyFooterTest() {
         homePage.clickNavigationLink(MainPageNavigation.Privacy_Policy);
         privacyPolicyPage.verifyPrivacyPolicyPage();
-        String privacyText = homePage.getFooterPrivacyPolicyText();
+        String privacyText = privacyPolicyPage.getFooterPrivacyPolicyText();
         assert privacyText.equals("Privacy") : "Expected 'Privacy' but got '" + privacyText + "'";
-        String copyrightText = homePage.getFooterCopyrightText();
+        String copyrightText = privacyPolicyPage.getFooterCopyrightText();
         assert copyrightText.contains("© 2025 - BPCalculator -") : "Expected copyright symbol but got '" + copyrightText + "'";
     }
 }
