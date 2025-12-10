@@ -1,5 +1,5 @@
 {
-  "protocol": "https",
-  "domain": "bp-ca1-cwhjbgg7b2f4h8ch.italynorth-01.azurewebsites.net",
+  "protocol": "http",
+  "domain": "localhost:5000",
   "wait": 10
 }
